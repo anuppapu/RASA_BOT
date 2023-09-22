@@ -1,0 +1,20 @@
+version: "2.0"
+nlu:
+- intent: request_names
+  examples: |
+    - i want to give you my name
+    - give name
+    - you need to know my name
+    - do you know my name?
+
+- intent: project_estimation
+  examples: |
+    - What is the estimated budget for project [Projectname]?
+    - How much effort will it take for project [Projectname]?
+    - Estimate the budget for [Projectname]
+    - How long will it take to complete [Projectname]?
+    - Project [Projectname] budget estimation
+    - [Projectname] project effort
+
+- lookup: projectname
+  examples: data/project_name.txt
